@@ -1,0 +1,112 @@
+/* b-com-trust */
+
+.b-com-trust .b-carousel  {
+	width: 100%; /* ширина всего блока */
+	margin: 0 auto;
+}
+	.b-com-trust .h-carousel-wrapper {
+		width: 100% ; /* ширина области карусели */
+		position: relative;
+		overflow: hidden!important; /* скрываем содержимое, выходящее за рамки основной области */
+		margin: 0 auto; /* выравниваем по центру относительно родительского блока */
+	}
+		.b-com-trust .h-carousel-items {
+			max-width: none!important;
+			width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
+			position: relative; /* позиционируем блок относительно основной области карусели */
+			left: 0;
+		}
+			.b-com-trust .b-carousel-block {
+				box-sizing: content-box;
+				float: left; /* выстраиваем все элементы карусели в ряд */
+				width: 264px; /* задаём ширину каждого элемента */
+				height: 160px;
+				padding: 0 15px; /* делаем оступы, чтобы элементы не сливались */
+			}
+				.b-com-trust .wrapper-block-carousel { /* тут чисто оформление содержимого */
+					display: block;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+				}
+
+.slide {
+	width: 100%;
+	height: 100%;
+}
+
+.b-carousel__b-btn {
+	position: absolute;
+	right: 0;
+}
+
+.b-com-trust__b-btn {
+	top: -50px;
+}
+
+.b-worker__b-btn {
+	top: -30px;
+}
+
+.b-carousel__btn {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px solid #184093;
+	background-repeat: no-repeat;
+	background-position: 11px 9px;
+	cursor: pointer;
+}
+
+.b-carousel__btn_next {
+	background-image: url('../img/next.svg');
+}
+.b-carousel__btn_next:hover {
+	background-image: url('../img/next-hover.svg');
+	border-color: #8B9FC9;
+	background-position: center center;
+}
+
+.b-carousel__btn_prev {
+	background-image: url('../img/prev.svg');
+}
+.b-carousel__btn_prev:hover {
+	background-image: url('../img/next-hover.svg');
+	transform: rotate(180deg);
+	border-color: #8B9FC9;
+	background-position: center center;
+}
+
+.b-worker .b-carousel-block:first-child {
+	padding-left: 0;
+}
+
+.b-worker .b-carousel  {
+	width: 100%; /* ширина всего блока */
+	margin: 0 auto;
+}
+	.b-worker .h-carousel-wrapper {
+		width: 100% ; /* ширина области карусели */
+		position: relative;
+		overflow: hidden!important; /* скрываем содержимое, выходящее за рамки основной области */
+		margin: 0 auto; /* выравниваем по центру относительно родительского блока */
+	}
+		.b-worker .h-carousel-items {
+			max-width: none!important;
+			width: 10000px; /* устанавливаем большую ширину для набора элементов карусели, чтобы в неё всё поместилось */
+			position: relative; /* позиционируем блок относительно основной области карусели */
+		}
+			.b-worker .b-carousel-block {
+				box-sizing: content-box;
+				float: left; /* выстраиваем все элементы карусели в ряд */
+				width: 169px; /* задаём ширину каждого элемента */
+				height: 320px;
+				padding: 0 15.7px; /* делаем оступы, чтобы элементы не сливались */
+			}
+				.b-worker .wrapper-block-carousel { /* тут чисто оформление содержимого */
+					display: block;
+					width: 100%;
+					height: 100%;
+					overflow: hidden;
+				}
