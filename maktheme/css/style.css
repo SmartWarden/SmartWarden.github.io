@@ -93,6 +93,7 @@ hr {
 	position: fixed;
 	background: #000;
 	width: 100%;
+	z-index:99;
 	
 
 	
