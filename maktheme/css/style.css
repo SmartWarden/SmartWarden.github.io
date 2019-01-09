@@ -29,13 +29,23 @@ body {
 	min-width: 320px;
 }
 
-h2, h3 {
+h2,
+h3 {
 	text-align: center;
 	font-weight: 700;
 	font-size: 30px;
 	color: #000000;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+	{
+	margin-top: 20px !important;
+}
+
+.work {
+	color: yellow;
+	margin-bottom: 30px;
 }
 
 h5 {
@@ -54,6 +64,17 @@ hr {
 	color: white !important;
 }
 
+#arrow-top {
+	width: 50px;
+	right: 30px;
+	bottom: 30px;
+	position: fixed;
+}
+
+#arrow-top img {
+	border-radius: 50%;
+}
+
 .brand-color {
 	color: #ffe600 !important;
 }
@@ -70,7 +91,7 @@ hr {
 	transform: translateX(-50%);
 }
 
-.after-line + p[class$="text"] {
+.after-line+p[class$="text"] {
 	/* Vertical indent */
 	margin-top: 40px;
 	text-align: center;
@@ -85,19 +106,13 @@ hr {
 
 .menu-top {
 	background: rgba(18, 18, 20, 0.3);
-
-	
 }
 
 .menu-fixed {
 	position: fixed;
 	background: #000;
 	width: 100%;
-	z-index:99;
-	
-
-	
-	
+	z-index: 99;
 }
 
 .menu-top .nav-link {
@@ -149,7 +164,7 @@ hr {
 	text-align: center;
 }
 
-.services{
+.services {
 	padding-top: 65px;
 	padding-bottom: 70px;
 }
@@ -159,7 +174,7 @@ hr {
 	height: 105px;
 	background: #ffe600;
 	border-radius: 50%;
-	margin:auto;
+	margin: auto;
 	border: 1px solid transparent;
 }
 
@@ -167,7 +182,7 @@ hr {
 	color: #ffffff;
 	font-size: 30px;
 	line-height: 105px;
-	
+
 }
 
 .services .circle:hover .fa {
@@ -184,8 +199,24 @@ hr {
 	padding-bottom: 80px;
 	background: url('../img/howwedobg.jpg') center center;
 	background-size: cover;
+	background-attachment: fixed;
 	color: #ffffff;
-/*   background-attachment: fixed; */
+	/*   background-attachment: fixed; */
+}
+
+.how {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#arrow-top {
+	position: fixed;
+	right: 5%;
+	bottom: 2%;
+	cursor: pointer;
+	z-index: 10;
 }
 
 .doit img:hover {
@@ -209,14 +240,14 @@ hr {
 	align-items: center;
 }
 
-.works .nav-item > a.nav-link {
+.works .nav-item>a.nav-link {
 	color: #515151;
 	font-weight: 400;
 }
 
-.works .nav-item > a.nav-link.active,
-.works .nav-item > a.nav-link:focus,
-.works .nav-item > a.nav-link:hover {
+.works .nav-item>a.nav-link.active,
+.works .nav-item>a.nav-link:focus,
+.works .nav-item>a.nav-link:hover {
 	color: #ffe600;
 	box-shadow: none;
 }
@@ -229,19 +260,19 @@ hr {
 	height: 200px;
 }
 
-.square-row:nth-child(even) > .square-cell:nth-child(odd) {
+.square-row:nth-child(even)>.square-cell:nth-child(odd) {
 	background-color: #394948;
 }
 
-.square-row:nth-child(even) > .square-cell:nth-child(even) {
+.square-row:nth-child(even)>.square-cell:nth-child(even) {
 	background-color: #11343a;
 }
 
-.square-row:nth-child(odd) > .square-cell:nth-child(odd) {
+.square-row:nth-child(odd)>.square-cell:nth-child(odd) {
 	background-color: #11343a;
 }
 
-.square-row:nth-child(odd) > .square-cell:nth-child(even) {
+.square-row:nth-child(odd)>.square-cell:nth-child(even) {
 	background-color: #394948;
 }
 
@@ -256,9 +287,15 @@ hr {
 .b-btn-down {
 	display: flex;
 	justify-content: center;
-	
+
 	padding-top: 24px;
 	padding-bottom: 60px;
+}
+
+.btn-top {
+	position: fixed;
+	right: 30px;
+	bottom: 70px;
 }
 
 .btn-down {
@@ -312,13 +349,13 @@ hr {
 
 .btn-contact:hover {
 	color: #fff;
-	text-decoration: none;     
+	text-decoration: none;
 }
 
 /* NUMBER */
 .number {
 	background-color: #000;
-	padding-bottom: 35px;  
+	padding-bottom: 35px;
 }
 
 .num-title {
@@ -389,6 +426,7 @@ hr {
 	height: 71px;
 	background-color: #ffe600;
 }
+
 .kit-card_project .kit-icon {
 	background-image: url(../img/about_icon1.png);
 }
@@ -438,7 +476,7 @@ hr {
 	margin-left: -30px;
 }
 
-.ourteam-list > li {
+.ourteam-list>li {
 	width: 25%;
 }
 
@@ -495,7 +533,8 @@ hr {
 .btn-close-aboutteam {
 	width: 15px;
 	height: 15px;
-	background-image: url(../img/x_icon.png); /* and show icon */
+	background-image: url(../img/x_icon.png);
+	/* and show icon */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -506,7 +545,7 @@ button.btn-close-aboutteam:focus {
 	border-radius: 50%;
 }
 
-.btn-close-aboutteam > span {
+.btn-close-aboutteam>span {
 	display: block;
 	width: 0;
 	height: 0;
@@ -618,7 +657,7 @@ button.btn-close-aboutteam:focus {
 	bottom: 51px;
 }
 
-.sayslider ol.carousel-indicators > li {
+.sayslider ol.carousel-indicators>li {
 	width: 5px;
 	height: 5px;
 	margin-right: 4px;
@@ -626,7 +665,7 @@ button.btn-close-aboutteam:focus {
 	background-color: #fff;
 }
 
-.sayslider ol.carousel-indicators > li.active {
+.sayslider ol.carousel-indicators>li.active {
 	background-color: #ffe600;
 }
 
@@ -637,18 +676,18 @@ button.btn-close-aboutteam:focus {
 	font-weight: 400;
 }
 
-.saying-slide .sayslide-text > span {
+.saying-slide .sayslide-text>span {
 	display: block;
 	font-size: 20px;
 	text-align: center;
 	line-height: 25px;
 }
 
-.saying-slide .sayslide-text > span:before {
+.saying-slide .sayslide-text>span:before {
 	content: open-quote;
 }
 
-.saying-slide .sayslide-text > span:after {
+.saying-slide .sayslide-text>span:after {
 	content: close-quote;
 }
 
@@ -700,15 +739,15 @@ button.btn-close-aboutteam:focus {
 	line-height: 27px;
 }
 
-.contact-card_address > .contact-card-icon {
+.contact-card_address>.contact-card-icon {
 	background-image: url(../img/contact_icon1.png);
 }
 
-.contact-card_mail > .contact-card-icon {
+.contact-card_mail>.contact-card-icon {
 	background-image: url(../img/contact_icon2.png);
 }
 
-.contact-card_phone > .contact-card-icon {
+.contact-card_phone>.contact-card-icon {
 	background-image: url(../img/contact_icon3.png);
 }
 
@@ -719,7 +758,9 @@ button.btn-close-aboutteam:focus {
 	padding-bottom: 68px;
 	background-color: #131a1d;
 }
-.sendus * { /* here '*' for direct setting instead of inherit */
+
+.sendus * {
+	/* here '*' for direct setting instead of inherit */
 	color: white;
 }
 
@@ -772,7 +813,7 @@ button.btn-close-aboutteam:focus {
 	align-items: center;
 }
 
-.sendus-form-info > input {
+.sendus-form-info>input {
 	display: block;
 	margin-bottom: 30px;
 	width: 31%;
@@ -834,7 +875,7 @@ button.btn-close-aboutteam:focus {
 	background-color: orange;
 }
 
-.net-ul > li > a > span {
+.net-ul>li>a>span {
 	display: block;
 	width: 0;
 	height: 0;
@@ -844,19 +885,19 @@ button.btn-close-aboutteam:focus {
 	z-index: -99999999;
 }
 
-.net-li_facebook > a {
+.net-li_facebook>a {
 	background-image: url(../img/footer_social_icon1.png);
 }
 
-.net-li_dribble > a {
+.net-li_dribble>a {
 	background-image: url(../img/footer_social_icon2.png);
 }
 
-.net-li_twitter > a {
+.net-li_twitter>a {
 	background-image: url(../img/footer_social_icon3.png);
 }
 
-.net-li_google > a {
+.net-li_google>a {
 	background-image: url(../img/footer_social_icon4.png);
 }
 
@@ -887,7 +928,8 @@ button.btn-close-aboutteam:focus {
 	.ourteam-list {
 		margin: 0;
 	}
-	.ourteam-list > li {
+
+	.ourteam-list>li {
 		width: 50%;
 	}
 }
@@ -908,11 +950,11 @@ button.btn-close-aboutteam:focus {
 		padding: 10px 35px;
 	}
 
-	.ourteam-list > li {
+	.ourteam-list>li {
 		width: 100%;
 	}
 
-	.sendus-form-info > input {
+	.sendus-form-info>input {
 		width: 45%;
 		margin-left: auto;
 		margin-right: auto;
@@ -921,10 +963,11 @@ button.btn-close-aboutteam:focus {
 
 /* not bootstrap point */
 @media (max-width: 585px) {
-	.ourteam-list > li {
+	.ourteam-list>li {
 		width: 100%;
 	}
-	.sendus-form-info > input {
+
+	.sendus-form-info>input {
 		width: 100%;
 	}
 }
