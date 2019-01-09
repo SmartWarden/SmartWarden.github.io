@@ -40,25 +40,7 @@ $(document).ready(function () {
 });
 
 
-    $(window).scroll(function () {
-        var $header = $('.header');
-        var scroll = $(this).scrollTop();
-        if(scroll >= $header.innerHeight()) {
-            $('#arrov-top').fadeIn(500);
-        }
-        else{
-            $('#arrov-top').fadeOut(500);
-        }
-   
-        
-    })
-    var $top = $('#arrow-top');
-    $top.click(function () {
-        $('html, body').animate({
-            scrollTop:0
-        }, 1000)
-       
-    })
+ 
 
 
 
