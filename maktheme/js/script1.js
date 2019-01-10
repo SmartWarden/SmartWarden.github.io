@@ -61,7 +61,7 @@ $(document).ready(function () {
     })
     
     var typed = new Typed(".typed", {
-        strings: ["","branding have another definition  "],
+        strings: ["","branding have another <br> definition  "],
         typeSpeed:60,
         backSpeed:60,
         startDelay: 30,
