@@ -1213,3 +1213,13 @@ footer .container .wp .theme h5 span {
   text-align: center;
   padding: 20px;
 }
+
+header ul li a:hover {
+/* border-bottom: 2px solid #17bed2; */
+color:#17bed2 !important; 
+}
+
+
+
+
+
