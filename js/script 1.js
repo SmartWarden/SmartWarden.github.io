@@ -166,8 +166,10 @@ $(function () {
       }
     }
 
-    getDateDiff();
-    setInterval(getDateDiff, 1000);
+    // getDateDiff();
+    // setInterval(getDateDiff, 1000);
 
   })();
 });
+
+
